@@ -18,7 +18,7 @@ import replace from "gulp-replace";
 const PRODUCTION = yargs.argv.prod;
 
 export const styles = () => {
-  return src("assets/scss/main.scss")
+  return src("assets/scss/main.scss", { allowEmpty: true })
     .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
     .pipe(sass().on("error", sass.logError))
     .pipe(gulpif(PRODUCTION, cleanCss({ compability: "ie8" })))
