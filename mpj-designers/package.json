@@ -38,6 +38,7 @@
     "gulp-replace": "^1.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-zip": "^5.0.2",
+    "postcss": "^8.0.9",
     "webpack-stream": "^6.1.0"
   }
 }

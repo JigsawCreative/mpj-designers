@@ -4,7 +4,7 @@ import yargs from "yargs";
 import sass from "gulp-sass";
 import cleanCss from "gulp-clean-css";
 import gulpif from "gulp-if";
-//import postcss from "gulp-postcss";
+import postcss from "gulp-postcss";
 import sourcemaps from "gulp-sourcemaps";
 import autoprefixer from "autoprefixer";
 import imagemin from "gulp-imagemin";
