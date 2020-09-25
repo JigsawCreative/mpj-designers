@@ -1,0 +1,43 @@
+{
+  "name": "mpj-designers",
+  "version": "1.0.0",
+  "description": "montpelier designers area theme",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JigsawCreative/mpj-designers.git"
+  },
+  "author": "Neil Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JigsawCreative/mpj-designers/issues"
+  },
+  "homepage": "https://github.com/JigsawCreative/mpj-designers#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.1.0",
+    "yargs": "^16.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "autoprefixer": "^10.0.0",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.2",
+    "webpack-stream": "^6.1.0"
+  }
+}
