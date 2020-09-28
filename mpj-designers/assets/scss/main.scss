@@ -5,7 +5,7 @@
 @import "../../node_modules/gorko/gorko.scss";
 
 @import "reset";
-@import "utilities";
+@import "utilities/wrapper";
 @import "./layout/layout-index";
 
 // Global styles start
@@ -17,9 +17,9 @@ body {
   background: get-color("secondary");
   color: get-color("primary");
   line-height: 1.5;
-  font-size: get-size("500");
+  font-size: get-size("400");
 
-  @include apply-utility("font", "base");
+  @include apply-utility("font", "body");
 }
 
 a:not([class]) {
@@ -42,7 +42,7 @@ h3,
 h4 {
   font-weight: 900;
 
-  @include apply-utility("font", "sans");
+  @include apply-utility("font", "heading");
   @include apply-utility("leading", "flat");
 }
 

@@ -4,6 +4,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
+<link rel="stylesheet" media="print" href="<?php echo get_site_url(); ?>/wp-content/themes/mpj-designers/public/build/fonts/fonts.css" onload="this.media='all'" />
 <?php wp_head(); ?>
 </head>
 
@@ -19,8 +20,8 @@
 
             <div class="site-logo">
 
-                <img src="/wp-content/uploads/montpelier-joinery-logo.png" alt="Montpelier Joinery Logo" class="logo">
-
+                <a href="/"><img src="/wp-content/uploads/montpelier-joinery-logo.png" alt="Montpelier Joinery Logo" class="logo"></a>
+                
             </div>
 
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>

@@ -3,17 +3,24 @@
 #menu {
   .main-menu {
     display: flex;
+    padding: 0.5rem 1rem;
   }
   /* Set link colour */
   a {
     color: $white;
+    @include apply-utility("font", "body");
   }
 
   /** Position menu links */
   ul {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+
+    li {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-transform: uppercase;
+    }
   }
 
   .site-logo {

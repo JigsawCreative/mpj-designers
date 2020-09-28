@@ -14,7 +14,7 @@ BlankSlate WordPress Theme © 2011-2019 TidyThemes
 BlankSlate is distributed under the terms of the GNU GPL
 */
 
-html,
+/* html,
 body,
 div,
 span,
@@ -228,4 +228,4 @@ section {
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
-}
+} */
