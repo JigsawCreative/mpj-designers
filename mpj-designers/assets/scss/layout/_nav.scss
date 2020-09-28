@@ -1,0 +1,22 @@
+/* Nav styling */
+
+#menu {
+  .main-menu {
+    display: flex;
+  }
+  /* Set link colour */
+  a {
+    color: $white;
+  }
+
+  /** Position menu links */
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .site-logo {
+    max-width: 12rem;
+  }
+}
