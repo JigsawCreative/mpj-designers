@@ -22,172 +22,76 @@
  * This powers everything from utility class generation to breakpoints
  * to enabling/disabling pre-built components/utilities.
  */
-.bg-dark {
-  background: #38445b;
-}
-
-.bg-dark-shade {
-  background: #263147;
-}
-
-.bg-dark-glare {
-  background: #505c73;
-}
-
-.bg-light {
-  background: #f9f4e3;
-}
-
-.bg-light-shade {
-  background: #fff6d7;
-}
-
-.bg-light-glare {
-  background: #fdfbf3;
-}
-
 .bg-primary {
-  background: #513aa6;
+  background: #444;
 }
 
 .bg-primary-shade {
-  background: #432e92;
+  background: #404040;
 }
 
 .bg-primary-glare {
-  background: #654ac9;
+  background: #525252;
 }
 
 .bg-secondary {
-  background: #6ac2b6;
+  background: #f9f8e9;
 }
 
 .bg-secondary-shade {
-  background: #35a495;
+  background: #f2f0d0;
 }
 
 .bg-secondary-glare {
-  background: #98e2d8;
+  background: #faf9ec;
 }
 
 .bg-tertiary {
-  background: #ffd490;
+  background: #f2f1ed;
 }
 
 .bg-tertiary-shade {
-  background: #ffca77;
+  background: #e4e2d9;
 }
 
 .bg-tertiary-glare {
-  background: #ffdeaa;
-}
-
-.bg-quaternary {
-  background: #ff7f5c;
-}
-
-.bg-quaternary-shade {
-  background: #f96841;
-}
-
-.bg-quaternary-glare {
-  background: #fe9476;
-}
-
-.bg-quinary {
-  background: #fa576e;
-}
-
-.bg-quinary-shade {
-  background: #fc3e59;
-}
-
-.bg-quinary-glare {
-  background: #f26c7f;
-}
-
-.color-dark {
-  color: #38445b;
-}
-
-.color-dark-shade {
-  color: #263147;
-}
-
-.color-dark-glare {
-  color: #505c73;
-}
-
-.color-light {
-  color: #f9f4e3;
-}
-
-.color-light-shade {
-  color: #fff6d7;
-}
-
-.color-light-glare {
-  color: #fdfbf3;
+  background: #f3f2ef;
 }
 
 .color-primary {
-  color: #513aa6;
+  color: #444;
 }
 
 .color-primary-shade {
-  color: #432e92;
+  color: #404040;
 }
 
 .color-primary-glare {
-  color: #654ac9;
+  color: #525252;
 }
 
 .color-secondary {
-  color: #6ac2b6;
+  color: #f9f8e9;
 }
 
 .color-secondary-shade {
-  color: #35a495;
+  color: #f2f0d0;
 }
 
 .color-secondary-glare {
-  color: #98e2d8;
+  color: #faf9ec;
 }
 
 .color-tertiary {
-  color: #ffd490;
+  color: #f2f1ed;
 }
 
 .color-tertiary-shade {
-  color: #ffca77;
+  color: #e4e2d9;
 }
 
 .color-tertiary-glare {
-  color: #ffdeaa;
-}
-
-.color-quaternary {
-  color: #ff7f5c;
-}
-
-.color-quaternary-shade {
-  color: #f96841;
-}
-
-.color-quaternary-glare {
-  color: #fe9476;
-}
-
-.color-quinary {
-  color: #fa576e;
-}
-
-.color-quinary-shade {
-  color: #fc3e59;
-}
-
-.color-quinary-glare {
-  color: #f26c7f;
+  color: #f3f2ef;
 }
 
 .flow-space-300 {
@@ -583,146 +487,4 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-.definition-group {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: max-content 1fr;
-      grid-template-columns: -webkit-max-content 1fr;
-      grid-template-columns: max-content 1fr;
-  grid-gap: 0.5rem 1.5rem;
-}
-
-.tags-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-.tags-list[class] {
-  -webkit-margin-start: -1rem;
-          margin-inline-start: -1rem;
-}
-
-.tags-list > * {
-  padding-top: 1rem;
-  -webkit-padding-start: 1rem;
-          padding-inline-start: 1rem;
-}
-
-.dot-shadow {
-  --dot-shadow-size: 0.75rem;
-  position: relative;
-}
-
-.dot-shadow::before {
-  content: '';
-  display: block;
-  width: calc(100% + calc(var(--dot-shadow-size) * 2));
-  height: calc(100% + calc(var(--dot-shadow-size) * 2));
-  background-image: url("data:image/svg+xml,%3Csvg width='6px' height='6px' viewBox='0 0 6 6' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle fill='%23CAC6B8' cx='1' cy='5' r='1'%3E%3C/circle%3E%3Ccircle fill='%23CAC6B8' cx='4' cy='2' r='1'%3E%3C/circle%3E%3C/svg%3E%0A");
-  position: absolute;
-  top: calc(var(--dot-shadow-size) * -1);
-  left: calc(var(--dot-shadow-size) * -1);
-  z-index: -1;
-}
-
-/**
- * FLOW
- * Applies a margin to sibling elements based on a --flow-space custom property.
- */
-.flow > * + * {
-  margin-top: var(--flow-space, 1.77rem);
-}
-
-.frame {
-  position: relative;
-}
-
-.frame::before {
-  content: '';
-  pointer-events: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: -0.25rem;
-  left: -0.25rem;
-  border: 0.125rem solid #38445b;
-  z-index: 1;
-}
-
-@media (min-width: 37em) {
-  .frame::before {
-    top: -0.5rem;
-    left: -0.5rem;
-    border-width: 0.25rem;
-  }
-}
-
-.frame[data-frame='primary']::before {
-  border-color: #513aa6;
-}
-
-.frame[data-frame='secondary']::before {
-  border-color: #6ac2b6;
-}
-
-.frame[data-frame='quaternary']::before {
-  border-color: #ff7f5c;
-}
-
-.frame[data-frame='quinary']::before {
-  border-color: #fa576e;
-}
-
-.panel {
-  margin: 2.36rem 0;
-  padding: 2.36rem 0;
-}
-
-@media (min-width: 37em) {
-  .panel {
-    margin: 3.15rem 0;
-    padding: 3.15rem 0;
-  }
-}
-
-.radius, .dot-shadow::before, .frame::before {
-  border-radius: 0.25rem;
-}
-
-.site-wrap {
-  overflow-x: hidden;
-  position: relative;
-}
-
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: auto;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  white-space: nowrap;
-}
-
-/**
- * WRAPPER
- * Sets a max width, adds a consisten gutter and horizontally
- * centers the contents
- */
-.wrapper {
-  max-width: 70rem;
-  padding: 0 1.33rem;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-/*# sourceMappingURL=critical.css.map */
+/*# sourceMappingURL=gorko.css.map */
